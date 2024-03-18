@@ -1,0 +1,26 @@
+.textWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.commentText {
+  font-size: 15px;
+}
+
+.commentTextEdit {
+  padding: 15px;
+  border: 1px solid #F43676;
+  border-radius: 13px;
+  resize: none;
+}
+
+.btnsRow {
+  display: flex;
+  gap: 15px;
+}
+
+.commentBtn {
+  background: transparent;
+  color: #F43676;
+}

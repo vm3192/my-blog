@@ -1,0 +1,88 @@
+@import "@/lib/variables.scss";
+
+.search {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 998;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity .3s ease-out;
+  visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.search.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 996;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  opacity: 0;
+}
+
+.background.active {
+  opacity: .95;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  width: 100%;
+  max-width: 780px;
+  z-index: 997;
+  padding: 0 15px;
+}
+
+.paragraph {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.searchRow {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.input {
+  flex: 1 1 auto;
+  border: 1px solid #E6EDF6;
+  border-radius: 8px;
+  padding: 15px 25px;
+  background: #fff;
+  margin-right: -15px;
+}
+
+.closeIcon {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+}
+
+@media (max-width: $sm) {
+  .searchRow {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .input {
+    margin-right: 0;
+    width: 100%;
+  }
+}

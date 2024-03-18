@@ -1,0 +1,75 @@
+@import "@/lib/variables.scss";
+
+.postImage_wrapper {
+  width: 100%;
+  height: 550px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 13px;
+  box-shadow: 0px 8px 16px -8px rgba(0,0,0,0.30),0px 13px 27px -5px rgba(50,50,93,0.25);
+  margin-bottom: 50px;
+
+  img {
+    object-fit: cover;
+  }
+}
+
+.postTitle {
+font-size: 40px;
+font-weight: 800;
+text-align: center;
+margin-bottom: 25px;
+text-transform: capitalize;
+}
+
+.postInfo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  font-size: 14px;
+  margin-bottom: 50px;
+}
+
+.postInfo_author {
+  font-weight: 600;
+
+  span {
+    color: #F43676;
+  }
+}
+
+.postDate {
+  color: #4D6385;
+}
+
+.contentTitle {
+  font-size: 22px;
+  font-weight: 800;
+  margin-bottom: 30px;
+}
+
+.commentsWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  > div:not(:last-child) {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #F43676;
+  }
+}
+
+@media (max-width: $lg) {
+  .postImage_wrapper {
+    height: auto;
+    padding-top: 57.6%;
+
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+
+    }
+  }
+}

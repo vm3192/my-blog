@@ -1,0 +1,14 @@
+@import "@/lib/variables.scss";
+
+.formWrapper {
+  padding: 50px 60px;
+  border: 1px solid #ffe7d2;
+  border-radius: 13px;
+  background: #fff9f3;
+}
+
+@media (max-width: $sm) {
+  .formWrapper {
+    padding: 25px 30px;
+  }
+}

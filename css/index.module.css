@@ -1,0 +1,50 @@
+.post {
+  display: flex;
+  gap: 40px;
+}
+
+.postImage {
+  flex: 1 0 330px;
+  position: relative;
+  height: 330px;
+  border-radius: 8px;
+  box-shadow: 0 3px 12px -1px rgba(7, 10, 25, 0.2), 0 22px 27px -20px rgba(7, 10, 25, 0.2);
+  overflow: hidden;
+}
+.postImage img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.postBox {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.postTitle {
+  font-weight: 700;
+  font-size: 28px;
+  text-transform: capitalize;
+}
+
+.postInfo {
+  display: flex;
+  justify-content: space-between;
+}
+
+.postInfo_author {
+  color: #F43676;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.postInfo_date {
+  color: #4D6385;
+  font-size: 14px;
+  margin-left: 12px;
+}
+
+.postText {
+  padding-bottom: 15px;
+}

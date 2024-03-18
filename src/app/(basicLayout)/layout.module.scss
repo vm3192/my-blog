@@ -1,0 +1,34 @@
+@import "@/lib/variables.scss";
+
+.mainWrapper {
+  display: flex;
+  align-items: flex-start;
+  gap: 50px;
+}
+
+.content {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+
+.sidebar {
+  flex: 1;
+}
+
+@media (max-width: $lg) {
+  .mainWrapper {
+    gap: 20px;
+  }
+
+  .content {
+    flex: 2;
+  }
+}
+
+@media (max-width: $md) {
+  .sidebar {
+    display: none;
+  }
+}

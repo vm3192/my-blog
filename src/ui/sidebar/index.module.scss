@@ -1,0 +1,19 @@
+.sidebar {
+  flex: 1;
+  background: #FFF9F3;
+  border: 1px solid #FFE7D2;
+  border-radius: 13px;
+  padding: 35px 40px;
+}
+
+.sidebarTitle {
+  margin-bottom: 25px;
+  font-size: 22px;
+  font-weight: 800;
+}
+
+.sidebarWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}

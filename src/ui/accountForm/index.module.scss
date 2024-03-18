@@ -1,0 +1,62 @@
+@import "@/lib/variables.scss";
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.imageWrapper {
+  position: relative;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.editImage {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: .7;
+  color: white;
+  width: 70px;
+  height: 70px;
+  cursor: pointer;
+}
+
+.username {
+  font-weight: bold;
+  font-size: 22px;
+  flex: 1 0 auto;
+}
+
+.usernameInput {
+  border: 1px solid #f43676;
+  padding: 10px 15px;
+  border-radius: 13px;
+  flex: 1 0 auto;
+  max-width: 300px;
+  margin-right: auto;
+}
+
+.error {
+  flex: 1 0 100%;
+}
+
+@media (max-width: $sm) {
+  .wrapper {
+    flex-wrap: wrap;
+  }
+
+  .imageWrapper {
+    width: 50px;
+    height: 50px;
+  }
+
+  .usernameInput {
+    max-width: none;
+  }
+}

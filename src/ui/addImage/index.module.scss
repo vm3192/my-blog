@@ -1,0 +1,33 @@
+@import "@/lib/variables.scss";
+
+.addWrapper {
+  display: flex;
+  align-items: center;
+  border-radius: 50%;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.addInput {
+  display: none;
+}
+
+.imageWrapper {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.img {
+  object-fit: cover;
+}
+
+.delete {
+  cursor: pointer;
+}
+
+@media (max-width: $sm) {
+  .imageWrapper {
+    gap: 5px;
+  }
+}

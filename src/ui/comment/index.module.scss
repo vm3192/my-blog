@@ -1,0 +1,48 @@
+@import "@/lib/variables.scss";
+
+.comment {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.commentImage_wrapper {
+  flex: 0 0 52px;
+  height: 52px;
+  position: relative;
+  border-radius: 50%;
+  overflow: hidden;
+  background: #ccc;
+
+  img {
+    object-fit: cover;
+  }
+}
+
+.commentBox {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.commentInfo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  font-size: 14px;
+}
+
+.commentAuthor {
+  font-weight: 700;
+}
+
+@media (max-width: $sm) {
+  .comment {
+    flex-direction: column;
+  }
+  .commentImage_wrapper {
+    width: 52px;
+  }
+}

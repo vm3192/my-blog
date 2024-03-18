@@ -1,0 +1,43 @@
+@import "@/lib/variables.scss";
+
+.sidebarCard {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+.sidebarCard_image {
+  flex: 0 0 31.9%;
+  padding-top: 31.9%;
+  position: relative;
+  border-radius: 8px;
+  box-shadow: 2px 2px 3px 0px rgba(93, 112, 234, 0.1);
+  overflow: hidden;
+
+  img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+  }
+}
+
+.sidebarCard_info {
+  flex: 1 1 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.sidebarCard_title {
+  font-size: 15px;
+  font-weight: 700;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.sidebarCard_date {
+  font-size: 11px;
+}

@@ -1,0 +1,57 @@
+@import "@/lib/variables.scss";
+
+.searchTitle {
+  font-weight: 800;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.resultsList {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.resultItem {
+  padding: 20px;
+  background: #FFF9F3;
+  border: 1px solid #FFE7D2;
+  border-radius: 13px;
+  display: flex;
+  gap: 15px;
+}
+
+.imageWrapper {
+  box-shadow: 2px 2px 3px 0px rgba(93, 112, 234, 0.1);
+  border-radius: 5px;
+  flex: 0 0 20%;
+  position: relative;
+  overflow: hidden;
+
+  img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+  }
+}
+
+.title {
+  text-transform: capitalize;
+  font-weight: 800;
+  font-size: 18px;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.author {
+  color: #f43676;
+}
+
+@media (max-width: $sm) {
+  .imageWrapper {
+    display: none;
+  }
+}

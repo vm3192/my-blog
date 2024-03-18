@@ -1,0 +1,34 @@
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.previous, .next {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+}
+
+.pagesList {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.pageNumber {
+  cursor: pointer;
+}
+
+.pageNumber.active {
+  width: 25px;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3px;
+  border: 2px solid #f43676;
+  cursor: default;
+}

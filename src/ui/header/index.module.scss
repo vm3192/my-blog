@@ -1,0 +1,122 @@
+@import "@/lib/variables";
+
+.header {
+  box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #fff;
+  z-index: 999;
+}
+
+.header_wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.navList {
+  display: flex;
+  gap: 10px;
+}
+
+.navList_item {
+  padding: 10px 15px;
+}
+
+.navList_link {
+  font-weight: 600;
+  background-image: linear-gradient(to right, #aef3ff 0%, #aef3ff 100%);
+  background-size: 100% 0%;
+  background-repeat: no-repeat;
+  background-position: left 90%;
+  transition: all 400ms ease;
+  cursor: pointer;
+
+  &:hover {
+    background-size: 100% 25%;
+  }
+}
+
+.loginButton {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  overflow: hidden;
+  position: relative;
+
+  img {
+    object-fit: cover;
+  }
+}
+
+.burgerIcon {
+  display: none;
+  cursor: pointer;
+}
+
+.burgerMenu {
+  padding: 20px;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  width: 100vw;
+  height: 100vh;
+  background: #fff;
+  transition: 0.3s ease;
+
+  .burgerCloseIcon {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    cursor: pointer;
+  }
+}
+
+.burgerMenu.active {
+  left: 0;
+}
+
+.loginInBurger {
+  flex: 0 1 max-content;
+}
+
+@media (max-width: $md) {
+  .navList_item {
+    padding: 6px;
+  }
+  .avatar {
+    display: none;
+  }
+}
+
+@media (max-width: $sm) {
+  .burgerIcon {
+    display: block;
+  }
+
+  .burgerMenu {
+    display: flex;
+  }
+
+  .navList {
+    display: none;
+  }
+
+  .loginButton {
+    display: none;
+  }
+}
